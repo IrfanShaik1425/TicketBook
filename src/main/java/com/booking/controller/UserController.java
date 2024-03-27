@@ -25,7 +25,7 @@ public class UserController
 	private UserRepository userrepo;
 	
 	@PostMapping("/save")
-	public String saveUser( @RequestBody User user)
+	public String saveUserDetails( @RequestBody User user)
 	{
 		
 		userserive.saveUser(user);
