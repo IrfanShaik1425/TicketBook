@@ -24,7 +24,7 @@ public class BusController
 	private BusRepository busrepo;
 	
 	@PostMapping("/save")
-	public String saveBus(@RequestBody Bus bus)
+	public String saveBusDetails(@RequestBody Bus bus)
 	{
 		busservice.saveBus(bus);
 		return "Bus Details Save Succssfully";
